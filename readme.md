@@ -42,3 +42,8 @@ python manage.py migrate
 # run application
 python manage.py runserver
 ```
+```bash
+# using predefined start script
+chmode +x start.sh
+./start.sh
+```
