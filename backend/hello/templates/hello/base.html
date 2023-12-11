@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,6 @@
     <title>{% block title %}Hello world{% endblock %}</title>
 </head>
 <body>
-
     <header>
         <h1>{% block header %}Header{% endblock %}</h1> {% include "hello/includes/lang_selector.html" %}
     </header>
@@ -14,7 +14,7 @@
         {% block content %}Test{% endblock %}
     </main>
     <footer>
-        <p>&copy; Today is {% now "Y" %}</p>
+        <p>&copy; {% translate 'Today is' %} {% now "Y m d" %}</p>
     </footer>
 </body>
 </html>
