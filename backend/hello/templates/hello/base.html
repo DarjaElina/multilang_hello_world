@@ -6,11 +6,12 @@
     <title>{% block title %}Hello world{% endblock %}</title>
 </head>
 <body>
+
     <header>
-        <h1>{% block header %}Header{% endblock %}</h1>
+        <h1>{% block header %}Header{% endblock %}</h1> {% include "hello/includes/lang_selector.html" %}
     </header>
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}Test{% endblock %}
     </main>
     <footer>
         <p>&copy; Today is {% now "Y" %}</p>
